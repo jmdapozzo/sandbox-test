@@ -1,13 +1,20 @@
 import React from "react";
-import { Button } from "react-bootstrap";
+import { Button, Card } from "react-bootstrap";
 import "./styles.css";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
-      <Button variant="danger">Yo</Button>
+      <Card style={{ width: "18rem" }}>
+        <Card.Body>
+          <Card.Title>Card Title</Card.Title>
+          <Card.Text>
+            Some quick example text to build on the card title and make up the
+            bulk of the card's content.
+          </Card.Text>
+          <Button variant="primary">Go somewhere</Button>
+        </Card.Body>
+      </Card>
     </div>
   );
 }
